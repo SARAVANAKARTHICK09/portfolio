@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saravana Karthick | Portfolio & Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{background:#0f172a;color:#f8fafc;line-height:1.6;}
+    header{background:#1e293b;padding:20px 50px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.3);}
+    header h1{font-size:28px;color:#38bdf8;}
+    header p{font-size:14px;color:#94a3b8;}
+
+    .container{max-width:1000px;margin:30px auto;padding:20px;}
+    section{margin-bottom:40px;}
+    h2{border-left:5px solid #38bdf8;padding-left:10px;margin-bottom:15px;}
+    .card{background:#1e293b;padding:20px;border-radius:10px;margin-bottom:15px;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+
+    .contact-info p{margin:6px 0;}
+    a{color:#38bdf8;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    footer{text-align:center;padding:20px;background:#1e293b;color:#94a3b8;}
+
+    .btn{display:inline-block;margin-top:10px;padding:8px 14px;background:#38bdf8;color:#0f172a;border-radius:8px;font-weight:600;text-decoration:none;}
+    .btn:hover{background:#0ea5e9;color:white;}
+
+    input,textarea{width:100%;padding:10px;border:none;border-radius:6px;margin-bottom:10px;background:#334155;color:white;}
+    button{background:#38bdf8;color:#0f172a;padding:10px 16px;border:none;border-radius:8px;font-weight:600;cursor:pointer;}
+    button:hover{background:#0ea5e9;}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SARAVANAKARTHICK B</h1>
+    <p>B.E Electrical Engineering | Web Developer | IoT Enthusiast</p>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>Objective</h2>
+      <div class="card">
+        <p>I want to join a company that supports my growth both professionally and personally. I am eager to contribute my skills and efforts to help the company succeed. Together, I look forward to achieving shared goals and making a positive impact.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <strong>M.Kumarasamy College of Engineering</strong><br>
+        B.E - Electrical Engineering (2022 - 2026)<br>
+        CGPA: 7.05 (till 6th Semester)
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Smoke Detector (2023 - 2024)</h3>
+          <p>Designed a smoke detector system to improve safety in homes and industries. It senses smoke and alerts people using a sound alarm, ensuring better safety monitoring.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud-Based BMS Data Analytics for EV using IoT (2024 - 2025)</h3>
+          <p>Developed a system that collects live data from EV batteries via IoT sensors and sends it to the cloud for monitoring battery performance and safety analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <ul>
+            <li>C Language (Beginner)</li>
+            <li>VLSI (Beginner)</li>
+            <li>MATLAB & Simulink</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Soft Skills:</strong>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Teamwork & Leadership</li>
+            <li>Debugging & Troubleshooting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>Proficiency in English (STEP by The Hindu)</li>
+          <li>NPTEL Certification in Cloud Computing</li>
+          <li>Zoho Creator Student Training (ZOHO)</li>
+          <li>First Class with Distinction in Typewriting English (30 WPM)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>Co-Curricular Activities</h2>
+      <div class="card">
+        <ul>
+          <li>Presented paper on “Digital Electronics” – DHRUVA 2024, Karpagam College</li>
+          <li>Attended Workshop on “Artificial Intelligence” – IGNITE 2024, SRIT Trichy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <div class="card">
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/saravana-karthick-b79b14259/" target="_blank">Click here</a></p>
+        <p>GitHub: <a href="https://github.com/SARAVANAKARTHICK09" target="_blank">Click here</a></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact-info">
+        <p><strong>Phone:</strong> +91 6369916388</p>
+        <p><strong>Email:</strong> <a href="mailto:saravanakarthick094@gmail.com">saravanakarthick094@gmail.com</a></p>
+        <p><strong>Address:</strong> 23/1, Poonga Nagar, Thanthondrimalai, Karur, Tamil Nadu - 639005</p>
+      </div>
+
+      <div class="card">
+        <form onsubmit="sendEmail(event)">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Message..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="msgStatus"></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Saravana Karthick | Built with 💙 Passion
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function sendEmail(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const email=document.getElementById('email').value;
+      const msg=document.getElementById('message').value;
+      window.location.href=`mailto:saravanakarthick094@gmail.com?subject=Message from ${name}&body=${msg}%0AFrom: ${email}`;
+      document.getElementById('msgStatus').innerText="Opening email client...";
+    }
+  </script>
+</body>
+</html>
